@@ -19,10 +19,10 @@ import { trackEvent } from '@/lib/sitecore-engage';
  *
  * @returns {JSX.Element} The home page UI
  */
-export default function HomePage() {
+export default function Demo() {
   return (
     <div style={{ padding: '20px' }}>
-      <h1>Sitecore CDP Demo</h1>
+      <h1>Sitecore CDP Demo2</h1>
       <p>Home page loaded</p>
 
       {/* Test button that sends a custom event to Sitecore CDP when clicked */}
@@ -30,9 +30,9 @@ export default function HomePage() {
         onClick={() =>
           trackEvent('TEST_EVENT_2', {
             channel: 'WEB',
-            currency: 'USD',
+            currency: 'INR',
             // Additional event data can be added here and will be tracked
-            message: 'Hello from Vikram demo',
+            message: 'Hello from Vikram demo Page2',
           })
         }
       >
